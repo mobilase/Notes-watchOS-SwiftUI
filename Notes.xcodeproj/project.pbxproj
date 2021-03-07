@@ -10,11 +10,13 @@
 		33E01E7125F58E7B00234185 /* Notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33E01E7025F58E7B00234185 /* Notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33E01E7625F58E7E00234185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E01E7525F58E7E00234185 /* Assets.xcassets */; };
 		33E01E7D25F58E7E00234185 /* Notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33E01E7C25F58E7E00234185 /* Notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		33E01E8225F58E7E00234185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01E8125F58E7E00234185 /* ContentView.swift */; };
 		33E01E8425F58E7E00234185 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01E8325F58E7E00234185 /* NotesApp.swift */; };
 		33E01E8625F58E7E00234185 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01E8525F58E7E00234185 /* ComplicationController.swift */; };
 		33E01E8825F58E7F00234185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E01E8725F58E7F00234185 /* Assets.xcassets */; };
 		33E01E8B25F58E7F00234185 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E01E8A25F58E7F00234185 /* Preview Assets.xcassets */; };
+		33E01EAB25F592D100234185 /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01EAA25F592D100234185 /* NoteList.swift */; };
+		33E01EB025F592FC00234185 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01EAF25F592FC00234185 /* NoteModel.swift */; };
+		33E01EC325F59B7800234185 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01EC225F59B7800234185 /* NoteItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +67,14 @@
 		33E01E7525F58E7E00234185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33E01E7725F58E7E00234185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33E01E7C25F58E7E00234185 /* Notes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		33E01E8125F58E7E00234185 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		33E01E8325F58E7E00234185 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		33E01E8525F58E7E00234185 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		33E01E8725F58E7F00234185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33E01E8A25F58E7F00234185 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33E01E8C25F58E7F00234185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E01EAA25F592D100234185 /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteList.swift; path = "Notes WatchKit Extension/NoteList.swift"; sourceTree = SOURCE_ROOT; };
+		33E01EAF25F592FC00234185 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		33E01EC225F59B7800234185 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,8 @@
 		33E01E8025F58E7E00234185 /* Notes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				33E01E8125F58E7E00234185 /* ContentView.swift */,
+				33E01EA625F591A300234185 /* Model */,
+				33E01E9D25F590EE00234185 /* Views */,
 				33E01E8325F58E7E00234185 /* NotesApp.swift */,
 				33E01E8525F58E7E00234185 /* ComplicationController.swift */,
 				33E01E8725F58E7F00234185 /* Assets.xcassets */,
@@ -131,6 +136,23 @@
 				33E01E8A25F58E7F00234185 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		33E01E9D25F590EE00234185 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33E01EAA25F592D100234185 /* NoteList.swift */,
+				33E01EC225F59B7800234185 /* NoteItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		33E01EA625F591A300234185 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33E01EAF25F592FC00234185 /* NoteModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33E01E8225F58E7E00234185 /* ContentView.swift in Sources */,
 				33E01E8425F58E7E00234185 /* NotesApp.swift in Sources */,
+				33E01EB025F592FC00234185 /* NoteModel.swift in Sources */,
 				33E01E8625F58E7E00234185 /* ComplicationController.swift in Sources */,
+				33E01EAB25F592D100234185 /* NoteList.swift in Sources */,
+				33E01EC325F59B7800234185 /* NoteItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
