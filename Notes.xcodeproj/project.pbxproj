@@ -17,6 +17,8 @@
 		33E01EAB25F592D100234185 /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01EAA25F592D100234185 /* NoteList.swift */; };
 		33E01EB025F592FC00234185 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01EAF25F592FC00234185 /* NoteModel.swift */; };
 		33E01EC325F59B7800234185 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01EC225F59B7800234185 /* NoteItem.swift */; };
+		33E01EC825F5B2EC00234185 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01EC725F5B2EC00234185 /* AddNote.swift */; };
+		33E01ECD25F5C67300234185 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01ECC25F5C67300234185 /* ListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		33E01EAA25F592D100234185 /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteList.swift; path = "Notes WatchKit Extension/NoteList.swift"; sourceTree = SOURCE_ROOT; };
 		33E01EAF25F592FC00234185 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		33E01EC225F59B7800234185 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
+		33E01EC725F5B2EC00234185 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
+		33E01ECC25F5C67300234185 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			children = (
 				33E01EAA25F592D100234185 /* NoteList.swift */,
 				33E01EC225F59B7800234185 /* NoteItem.swift */,
+				33E01EC725F5B2EC00234185 /* AddNote.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				33E01EAF25F592FC00234185 /* NoteModel.swift */,
+				33E01ECC25F5C67300234185 /* ListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,8 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E01E8425F58E7E00234185 /* NotesApp.swift in Sources */,
+				33E01EC825F5B2EC00234185 /* AddNote.swift in Sources */,
 				33E01EB025F592FC00234185 /* NoteModel.swift in Sources */,
 				33E01E8625F58E7E00234185 /* ComplicationController.swift in Sources */,
+				33E01ECD25F5C67300234185 /* ListModel.swift in Sources */,
 				33E01EAB25F592D100234185 /* NoteList.swift in Sources */,
 				33E01EC325F59B7800234185 /* NoteItem.swift in Sources */,
 			);

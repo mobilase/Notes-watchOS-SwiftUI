@@ -12,7 +12,7 @@ struct NotesApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                NoteList(notes: NoteModel.getData())
+                NoteList(notes: ListModel.getData())
             }
         }
     }
