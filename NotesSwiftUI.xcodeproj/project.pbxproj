@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33E01E7125F58E7B00234185 /* Notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33E01E7025F58E7B00234185 /* Notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33E01E7125F58E7B00234185 /* NotesSwiftUI WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33E01E7025F58E7B00234185 /* NotesSwiftUI WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33E01E7625F58E7E00234185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E01E7525F58E7E00234185 /* Assets.xcassets */; };
-		33E01E7D25F58E7E00234185 /* Notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33E01E7C25F58E7E00234185 /* Notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		33E01E7D25F58E7E00234185 /* NotesSwiftUI WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33E01E7C25F58E7E00234185 /* NotesSwiftUI WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33E01E8425F58E7E00234185 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01E8325F58E7E00234185 /* NotesApp.swift */; };
 		33E01E8625F58E7E00234185 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E01E8525F58E7E00234185 /* ComplicationController.swift */; };
 		33E01E8825F58E7F00234185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E01E8725F58E7F00234185 /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				33E01E7D25F58E7E00234185 /* Notes WatchKit Extension.appex in Embed App Extensions */,
+				33E01E7D25F58E7E00234185 /* NotesSwiftUI WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				33E01E7125F58E7B00234185 /* Notes WatchKit App.app in Embed Watch Content */,
+				33E01E7125F58E7B00234185 /* NotesSwiftUI WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,11 +64,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		33E01E6C25F58E7A00234185 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		33E01E7025F58E7B00234185 /* Notes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E01E6C25F58E7A00234185 /* NotesSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E01E7025F58E7B00234185 /* NotesSwiftUI WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotesSwiftUI WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E01E7525F58E7E00234185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33E01E7725F58E7E00234185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33E01E7C25F58E7E00234185 /* Notes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E01E7C25F58E7E00234185 /* NotesSwiftUI WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NotesSwiftUI WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E01E8325F58E7E00234185 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		33E01E8525F58E7E00234185 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		33E01E8725F58E7F00234185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,9 +104,9 @@
 		33E01E6D25F58E7A00234185 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				33E01E6C25F58E7A00234185 /* Notes.app */,
-				33E01E7025F58E7B00234185 /* Notes WatchKit App.app */,
-				33E01E7C25F58E7E00234185 /* Notes WatchKit Extension.appex */,
+				33E01E6C25F58E7A00234185 /* NotesSwiftUI.app */,
+				33E01E7025F58E7B00234185 /* NotesSwiftUI WatchKit App.app */,
+				33E01E7C25F58E7E00234185 /* NotesSwiftUI WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		33E01E6B25F58E7A00234185 /* Notes */ = {
+		33E01E6B25F58E7A00234185 /* NotesSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33E01E9725F58E7F00234185 /* Build configuration list for PBXNativeTarget "Notes" */;
+			buildConfigurationList = 33E01E9725F58E7F00234185 /* Build configuration list for PBXNativeTarget "NotesSwiftUI" */;
 			buildPhases = (
 				33E01E6A25F58E7A00234185 /* Resources */,
 				33E01E9625F58E7F00234185 /* Embed Watch Content */,
@@ -176,14 +176,14 @@
 			dependencies = (
 				33E01E7325F58E7B00234185 /* PBXTargetDependency */,
 			);
-			name = Notes;
+			name = NotesSwiftUI;
 			productName = Notes;
-			productReference = 33E01E6C25F58E7A00234185 /* Notes.app */;
+			productReference = 33E01E6C25F58E7A00234185 /* NotesSwiftUI.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		33E01E6F25F58E7B00234185 /* Notes WatchKit App */ = {
+		33E01E6F25F58E7B00234185 /* NotesSwiftUI WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33E01E9325F58E7F00234185 /* Build configuration list for PBXNativeTarget "Notes WatchKit App" */;
+			buildConfigurationList = 33E01E9325F58E7F00234185 /* Build configuration list for PBXNativeTarget "NotesSwiftUI WatchKit App" */;
 			buildPhases = (
 				33E01E6E25F58E7B00234185 /* Resources */,
 				33E01E9225F58E7F00234185 /* Embed App Extensions */,
@@ -193,14 +193,14 @@
 			dependencies = (
 				33E01E7F25F58E7E00234185 /* PBXTargetDependency */,
 			);
-			name = "Notes WatchKit App";
+			name = "NotesSwiftUI WatchKit App";
 			productName = "Notes WatchKit App";
-			productReference = 33E01E7025F58E7B00234185 /* Notes WatchKit App.app */;
+			productReference = 33E01E7025F58E7B00234185 /* NotesSwiftUI WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		33E01E7B25F58E7E00234185 /* Notes WatchKit Extension */ = {
+		33E01E7B25F58E7E00234185 /* NotesSwiftUI WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33E01E8F25F58E7F00234185 /* Build configuration list for PBXNativeTarget "Notes WatchKit Extension" */;
+			buildConfigurationList = 33E01E8F25F58E7F00234185 /* Build configuration list for PBXNativeTarget "NotesSwiftUI WatchKit Extension" */;
 			buildPhases = (
 				33E01E7825F58E7E00234185 /* Sources */,
 				33E01E7925F58E7E00234185 /* Frameworks */,
@@ -210,9 +210,9 @@
 			);
 			dependencies = (
 			);
-			name = "Notes WatchKit Extension";
+			name = "NotesSwiftUI WatchKit Extension";
 			productName = "Notes WatchKit Extension";
-			productReference = 33E01E7C25F58E7E00234185 /* Notes WatchKit Extension.appex */;
+			productReference = 33E01E7C25F58E7E00234185 /* NotesSwiftUI WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 33E01E6925F58E7A00234185 /* Build configuration list for PBXProject "Notes" */;
+			buildConfigurationList = 33E01E6925F58E7A00234185 /* Build configuration list for PBXProject "NotesSwiftUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -248,9 +248,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				33E01E6B25F58E7A00234185 /* Notes */,
-				33E01E6F25F58E7B00234185 /* Notes WatchKit App */,
-				33E01E7B25F58E7E00234185 /* Notes WatchKit Extension */,
+				33E01E6B25F58E7A00234185 /* NotesSwiftUI */,
+				33E01E6F25F58E7B00234185 /* NotesSwiftUI WatchKit App */,
+				33E01E7B25F58E7E00234185 /* NotesSwiftUI WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -302,12 +302,12 @@
 /* Begin PBXTargetDependency section */
 		33E01E7325F58E7B00234185 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 33E01E6F25F58E7B00234185 /* Notes WatchKit App */;
+			target = 33E01E6F25F58E7B00234185 /* NotesSwiftUI WatchKit App */;
 			targetProxy = 33E01E7225F58E7B00234185 /* PBXContainerItemProxy */;
 		};
 		33E01E7F25F58E7E00234185 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 33E01E7B25F58E7E00234185 /* Notes WatchKit Extension */;
+			target = 33E01E7B25F58E7E00234185 /* NotesSwiftUI WatchKit Extension */;
 			targetProxy = 33E01E7E25F58E7E00234185 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -544,7 +544,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		33E01E6925F58E7A00234185 /* Build configuration list for PBXProject "Notes" */ = {
+		33E01E6925F58E7A00234185 /* Build configuration list for PBXProject "NotesSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33E01E8D25F58E7F00234185 /* Debug */,
@@ -553,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33E01E8F25F58E7F00234185 /* Build configuration list for PBXNativeTarget "Notes WatchKit Extension" */ = {
+		33E01E8F25F58E7F00234185 /* Build configuration list for PBXNativeTarget "NotesSwiftUI WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33E01E9025F58E7F00234185 /* Debug */,
@@ -562,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33E01E9325F58E7F00234185 /* Build configuration list for PBXNativeTarget "Notes WatchKit App" */ = {
+		33E01E9325F58E7F00234185 /* Build configuration list for PBXNativeTarget "NotesSwiftUI WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33E01E9425F58E7F00234185 /* Debug */,
@@ -571,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33E01E9725F58E7F00234185 /* Build configuration list for PBXNativeTarget "Notes" */ = {
+		33E01E9725F58E7F00234185 /* Build configuration list for PBXNativeTarget "NotesSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33E01E9825F58E7F00234185 /* Debug */,
