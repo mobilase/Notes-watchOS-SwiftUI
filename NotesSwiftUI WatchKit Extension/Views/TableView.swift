@@ -7,36 +7,34 @@
 
 import SwiftUI
 
-struct NoteList: View {
+struct TableView: View {
     
-    @State var notes: [NoteModel]
+    @State var notes: [Note]
     @State var index = 0.0
     
     var body: some View {
         VStack{
+            NavigationLink(destination:AddNoteView(), label: {
+                Text("Добавить")
+            }).background(Color.green).cornerRadius(5.0)
             List {
                 ForEach(notes) {note in
-                    NavigationLink( destination:NoteItem(title: note.title, text: note.text)) {
-                        Text(note.title)
-                    }
-                    .listRowPlatterColor(Color.gray)
+                    TableRowView(note: note)
                 }
                 .onDelete { (indexSet) in
                     notes.remove(atOffsets: indexSet)
                 }
             }
             .listStyle(CarouselListStyle.init());
-            NavigationLink(destination:AddNote(), label: {
-                Text("Добавить")
-            }).background(Color.green).cornerRadius(5.0)
+
         }
     }
 }
 
-struct NoteList_Previews: PreviewProvider {
+struct TableView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            NoteList(notes: ListModel.getData())
+            TableView(notes: Note.notes)
         }
     }
 }

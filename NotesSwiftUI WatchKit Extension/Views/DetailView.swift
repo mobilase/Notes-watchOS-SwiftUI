@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NoteItem: View {
+struct DetailView: View {
     
     var title: String
     var text: String
@@ -15,7 +15,10 @@ struct NoteItem: View {
     var body: some View {
         VStack(alignment: .leading){
             Text(title).font(.title);
-            Text(text).font(.body)
+            Text(text).font(.body);
+            NavigationLink(destination:AddNoteView(), label: {
+                Text("Изменить")
+            }).background(Color.green).cornerRadius(5.0)
         }
         .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,
                maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
@@ -25,8 +28,8 @@ struct NoteItem: View {
     }
 }
 
-struct NoteItem_Previews: PreviewProvider {
+struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteItem(title: "Title", text: "Text")
+        DetailView(title: "Title", text: "Text")
     }
 }
