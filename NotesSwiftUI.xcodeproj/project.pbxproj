@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33C8E35525FCF54400C3F59F /* NoteData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33C8E35325FCF54400C3F59F /* NoteData.xcdatamodeld */; };
+		33C8E35B25FCF5A000C3F59F /* Persistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8E35A25FCF5A000C3F59F /* Persistant.swift */; };
+		33C8E36025FCFB0F00C3F59F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8E35F25FCFB0F00C3F59F /* HomeView.swift */; };
+		33C8E36825FCFD4900C3F59F /* NavButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8E36725FCFD4900C3F59F /* NavButtonView.swift */; };
+		33C8E36D25FCFEB600C3F59F /* NoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8E36C25FCFEB600C3F59F /* NoteList.swift */; };
 		33E01E7125F58E7B00234185 /* NotesSwiftUI WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 33E01E7025F58E7B00234185 /* NotesSwiftUI WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		33E01E7625F58E7E00234185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E01E7525F58E7E00234185 /* Assets.xcassets */; };
 		33E01E7D25F58E7E00234185 /* NotesSwiftUI WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 33E01E7C25F58E7E00234185 /* NotesSwiftUI WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -64,6 +69,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		33C8E35425FCF54400C3F59F /* NoteData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteData.xcdatamodel; sourceTree = "<group>"; };
+		33C8E35A25FCF5A000C3F59F /* Persistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistant.swift; sourceTree = "<group>"; };
+		33C8E35F25FCFB0F00C3F59F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		33C8E36725FCFD4900C3F59F /* NavButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButtonView.swift; sourceTree = "<group>"; };
+		33C8E36C25FCFEB600C3F59F /* NoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteList.swift; sourceTree = "<group>"; };
 		33E01E6C25F58E7A00234185 /* NotesSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E01E7025F58E7B00234185 /* NotesSwiftUI WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotesSwiftUI WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E01E7525F58E7E00234185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33C8E35925FCF56C00C3F59F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				33C8E35325FCF54400C3F59F /* NoteData.xcdatamodeld */,
+				33C8E35A25FCF5A000C3F59F /* Persistant.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		33E01E6525F58E7A00234185 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +142,7 @@
 		33E01E8025F58E7E00234185 /* NotesSwiftUI WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				33C8E35925FCF56C00C3F59F /* Shared */,
 				33E01EA625F591A300234185 /* Model */,
 				33E01E9D25F590EE00234185 /* Views */,
 				33E01E8325F58E7E00234185 /* NotesApp.swift */,
@@ -146,9 +166,11 @@
 			isa = PBXGroup;
 			children = (
 				33E01EC725F5B2EC00234185 /* AddNoteView.swift */,
+				33C8E36725FCFD4900C3F59F /* NavButtonView.swift */,
 				33E01EC225F59B7800234185 /* DetailView.swift */,
 				33E01EFD25F682EA00234185 /* TableView.swift */,
 				33E01F2525F695C200234185 /* TableRowView.swift */,
+				33C8E35F25FCFB0F00C3F59F /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				33E01EAF25F592FC00234185 /* Note.swift */,
+				33C8E36C25FCFEB600C3F59F /* NoteList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,8 +313,13 @@
 				33E01E8425F58E7E00234185 /* NotesApp.swift in Sources */,
 				33E01EC825F5B2EC00234185 /* AddNoteView.swift in Sources */,
 				33E01EB025F592FC00234185 /* Note.swift in Sources */,
+				33C8E36025FCFB0F00C3F59F /* HomeView.swift in Sources */,
 				33E01E8625F58E7E00234185 /* ComplicationController.swift in Sources */,
+				33C8E36D25FCFEB600C3F59F /* NoteList.swift in Sources */,
+				33C8E35B25FCF5A000C3F59F /* Persistant.swift in Sources */,
 				33E01EFE25F682EA00234185 /* TableView.swift in Sources */,
+				33C8E36825FCFD4900C3F59F /* NavButtonView.swift in Sources */,
+				33C8E35525FCF54400C3F59F /* NoteData.xcdatamodeld in Sources */,
 				33E01EC325F59B7800234185 /* DetailView.swift in Sources */,
 				33E01F2625F695C200234185 /* TableRowView.swift in Sources */,
 			);
@@ -583,6 +611,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		33C8E35325FCF54400C3F59F /* NoteData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				33C8E35425FCF54400C3F59F /* NoteData.xcdatamodel */,
+			);
+			currentVersion = 33C8E35425FCF54400C3F59F /* NoteData.xcdatamodel */;
+			path = NoteData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 33E01E6625F58E7A00234185 /* Project object */;
 }

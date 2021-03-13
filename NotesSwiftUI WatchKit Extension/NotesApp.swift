@@ -12,7 +12,7 @@ struct NotesApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                TableView(notes: Note.notes)
+                HomeView()
             }
         }
     }

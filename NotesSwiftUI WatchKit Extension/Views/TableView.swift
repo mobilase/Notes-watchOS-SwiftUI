@@ -34,7 +34,7 @@ struct TableView: View {
 struct TableView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TableView(notes: Note.notes)
+            TableView(notes: NoteList.notes)
         }
     }
 }

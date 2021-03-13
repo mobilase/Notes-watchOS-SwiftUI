@@ -31,7 +31,7 @@ struct AddNoteView: View {
                 self.editTitle = false
             }
             Button("Сохранить"){
-                Note.notes.append(Note(title: title, text: text))
+                NoteList.notes.append(Note(title: title, text: text))
                 self.presentation.wrappedValue.dismiss()
             }.background(Color.green).cornerRadius(5.0)
         }
