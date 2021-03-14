@@ -16,7 +16,7 @@ struct DetailView: View {
         VStack(alignment: .leading){
             Text(title).font(.title);
             Text(text).font(.body);
-            NavigationLink(destination:AddNoteView(), label: {
+            NavigationLink(destination:EditView(), label: {
                 Text("Изменить")
             }).background(Color.green).cornerRadius(5.0)
         }

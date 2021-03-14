@@ -9,11 +9,13 @@ import SwiftUI
 
 @main
 struct NotesApp: App {
+    let container = PersistenceController.shared.container
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 HomeView()
             }
+            .environment(\.managedObjectContext, container.viewContext)
         }
     }
 }

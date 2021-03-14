@@ -13,7 +13,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
     
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "NoteSwiftUI")
+        container = NSPersistentContainer(name: "Data")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
