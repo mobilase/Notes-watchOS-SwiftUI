@@ -1,16 +1,14 @@
 //
-//  AddNote.swift
-//  Notes WatchKit Extension
+//  AddView.swift
+//  NotesSwiftUI WatchKit Extension
 //
-//  Created by Сергей Лавров on 08.03.2021.
+//  Created by Сергей Лавров on 14.03.2021.
 //
 
 import SwiftUI
 
-struct EditView: View {
-    
-    @State var note: Note
-    
+struct AddView: View {
+
     @State var title: String = ""
     @State var text: String = ""
     @State var editTitle = false
@@ -33,7 +31,7 @@ struct EditView: View {
                 editText in self.editText = editText
                 self.editTitle = false
             }
-            Button(action: saveNote, label: {
+            Button(action: addNote, label: {
                 Text("Сохранить")
                     .padding(.vertical, 10)
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -44,18 +42,14 @@ struct EditView: View {
             .buttonStyle(PlainButtonStyle())
             .disabled(title == "" && text == "")
         }
-        .navigationTitle("Изменение")
-        .onLoad{load()}
+        .navigationTitle("Добавление")
     }
     
-    func load() {
-        title = note.title ?? ""
-        text = note.text ?? ""
-    }
-    
-    func saveNote() {
+    func addNote() {
+        let note = Note(context: context)
         note.title = title
         note.text = text
+        note.added = Date()
         note.edited = Date()
         do{
             try context.save()
@@ -66,14 +60,8 @@ struct EditView: View {
     }
 }
 
-struct EditView_Previews: PreviewProvider {
+struct AddView_Previews: PreviewProvider {
     static var previews: some View {
-        EditView(note: Note())
-    }
-}
-
-extension View {
-    func onLoad(perform action: (() -> Void)? = nil) -> some View {
-        modifier(ViewDidLoadModifier(perform: action))
+        AddView()
     }
 }

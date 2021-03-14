@@ -12,7 +12,7 @@ struct TableRowView: View {
     @State var note: Note
     
     var body: some View {
-        NavigationLink( destination: DetailView(title: note.title ?? "", text: note.text ?? "")) {
+        NavigationLink( destination: DetailView(note: note)) {
             VStack {
                 Text(note.title ?? "")
                     .frame(

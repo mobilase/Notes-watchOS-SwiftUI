@@ -37,6 +37,6 @@ struct HomeButtonView: View {
 
 struct HomveButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeButtonView(dest: AnyView(EditView()), image: "plus", title: "Add", rect: CGRect(x: 150, y: 150, width: 150, height: 150), color: Color("green"))
+        HomeButtonView(dest: AnyView(AddView()), image: "plus", title: "Add", rect: CGRect(x: 150, y: 150, width: 150, height: 150), color: Color("green"))
     }
 }

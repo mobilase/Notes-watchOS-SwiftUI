@@ -9,14 +9,12 @@ import SwiftUI
 
 struct DetailView: View {
     
-    var title: String
-    var text: String
+    @State var note: Note
     
     var body: some View {
         VStack(alignment: .leading){
-            Text(title).font(.title);
-            Text(text).font(.body);
-            NavigationLink(destination:EditView(), label: {
+            Text(note.text ?? "").font(.body);
+            NavigationLink(destination:EditView(note: note), label: {
                 Text("Изменить")
             }).background(Color.green).cornerRadius(5.0)
         }
@@ -25,11 +23,12 @@ struct DetailView: View {
                minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,
                maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,
                alignment: .topLeading)
+        .navigationTitle(note.title ?? "")
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(title: "Title", text: "Text")
+        DetailView(note: Note())
     }
 }
