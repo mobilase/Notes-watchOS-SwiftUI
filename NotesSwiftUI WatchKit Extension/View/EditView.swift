@@ -45,12 +45,10 @@ struct EditView: View {
             .disabled(title == "" && text == "")
         }
         .navigationTitle("Изменение")
-        .onLoad{load()}
-    }
-    
-    func load() {
-        title = note.title ?? ""
-        text = note.text ?? ""
+        .onLoad{
+            title = note.title ?? ""
+            text = note.text ?? ""
+        }
     }
     
     func saveNote() {
@@ -69,11 +67,5 @@ struct EditView: View {
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
         EditView(note: Note())
-    }
-}
-
-extension View {
-    func onLoad(perform action: (() -> Void)? = nil) -> some View {
-        modifier(ViewDidLoadModifier(perform: action))
     }
 }

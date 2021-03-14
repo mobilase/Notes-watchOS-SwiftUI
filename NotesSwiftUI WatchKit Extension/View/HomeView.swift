@@ -19,8 +19,8 @@ struct HomeView: View {
                 .frame(width:rect.width, height:rect.height/2, alignment: .center)
                 
                 HStack() {
-                    HomeButtonView(dest: AnyView(AddView()), image: "magnifyingglass", title: "Искать", rect: rect, color: Color("orange"))
-                    HomeButtonView(dest: AnyView(TableView()), image: "gear", title: "Настройки", rect: rect, color: Color("gray"))
+                    HomeButtonView(dest: AnyView(SearchView()), image: "magnifyingglass", title: "Искать", rect: rect, color: Color("orange"))
+                    HomeButtonView(dest: AnyView(SettingsView()), image: "gear", title: "Настройки", rect: rect, color: Color("gray"))
                 }
                 .frame(width:rect.width, height:rect.height/2, alignment: .center)
 

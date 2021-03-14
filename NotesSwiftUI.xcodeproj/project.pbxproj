@@ -10,6 +10,9 @@
 		33B1A6CC25FE37A80003D579 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A6CB25FE37A80003D579 /* HomeButtonView.swift */; };
 		33B1A6EC25FE5BC40003D579 /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A6EB25FE5BC40003D579 /* ViewDidLoadModifier.swift */; };
 		33B1A6FD25FE5D720003D579 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A6FC25FE5D720003D579 /* AddView.swift */; };
+		33B1A72B25FE781E0003D579 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A72A25FE781E0003D579 /* SettingsView.swift */; };
+		33B1A73025FE79110003D579 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A72F25FE79110003D579 /* SearchView.swift */; };
+		33B1A73825FE7A050003D579 /* FoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B1A73725FE7A050003D579 /* FoundView.swift */; };
 		33C8E35525FCF54400C3F59F /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33C8E35325FCF54400C3F59F /* Data.xcdatamodeld */; };
 		33C8E35B25FCF5A000C3F59F /* Persistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8E35A25FCF5A000C3F59F /* Persistant.swift */; };
 		33C8E36025FCFB0F00C3F59F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C8E35F25FCFB0F00C3F59F /* HomeView.swift */; };
@@ -72,6 +75,9 @@
 		33B1A6CB25FE37A80003D579 /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
 		33B1A6EB25FE5BC40003D579 /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
 		33B1A6FC25FE5D720003D579 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		33B1A72A25FE781E0003D579 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		33B1A72F25FE79110003D579 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		33B1A73725FE7A050003D579 /* FoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundView.swift; sourceTree = "<group>"; };
 		33C8E35425FCF54400C3F59F /* NoteData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteData.xcdatamodel; sourceTree = "<group>"; };
 		33C8E35A25FCF5A000C3F59F /* Persistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistant.swift; sourceTree = "<group>"; };
 		33C8E35F25FCFB0F00C3F59F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -171,6 +177,9 @@
 				33E01EFD25F682EA00234185 /* TableView.swift */,
 				33E01F2525F695C200234185 /* TableRowView.swift */,
 				33E01EC225F59B7800234185 /* DetailView.swift */,
+				33B1A72A25FE781E0003D579 /* SettingsView.swift */,
+				33B1A72F25FE79110003D579 /* SearchView.swift */,
+				33B1A73725FE7A050003D579 /* FoundView.swift */,
 				33B1A6EB25FE5BC40003D579 /* ViewDidLoadModifier.swift */,
 			);
 			path = View;
@@ -305,6 +314,7 @@
 				33E01E8425F58E7E00234185 /* NotesApp.swift in Sources */,
 				33E01EC825F5B2EC00234185 /* EditView.swift in Sources */,
 				33C8E36025FCFB0F00C3F59F /* HomeView.swift in Sources */,
+				33B1A73825FE7A050003D579 /* FoundView.swift in Sources */,
 				33E01E8625F58E7E00234185 /* ComplicationController.swift in Sources */,
 				33C8E35B25FCF5A000C3F59F /* Persistant.swift in Sources */,
 				33B1A6EC25FE5BC40003D579 /* ViewDidLoadModifier.swift in Sources */,
@@ -312,8 +322,10 @@
 				33C8E35525FCF54400C3F59F /* Data.xcdatamodeld in Sources */,
 				33B1A6FD25FE5D720003D579 /* AddView.swift in Sources */,
 				33B1A6CC25FE37A80003D579 /* HomeButtonView.swift in Sources */,
+				33B1A73025FE79110003D579 /* SearchView.swift in Sources */,
 				33E01EC325F59B7800234185 /* DetailView.swift in Sources */,
 				33E01F2625F695C200234185 /* TableRowView.swift in Sources */,
+				33B1A72B25FE781E0003D579 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

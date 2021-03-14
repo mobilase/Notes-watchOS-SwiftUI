@@ -1,19 +1,22 @@
 //
-//  NoteList.swift
-//  Notes WatchKit Extension
+//  FoundView.swift
+//  NotesSwiftUI WatchKit Extension
 //
-//  Created by Сергей Лавров on 08.03.2021.
+//  Created by Сергей Лавров on 14.03.2021.
 //
 
 import SwiftUI
-import CoreData
 
-struct TableView: View {
+struct FoundView: View {
     
+    @State var search: String = ""
     @State private var isDelete = false
     @State private var deleteNote: Note? = nil
-    
-    @FetchRequest(entity: Note.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Note.added, ascending: false)], animation: .easeIn) var results : FetchedResults<Note>
+    @FetchRequest var results : FetchedResults<Note>
+
+    init(search: String) {
+        self._results = FetchRequest<Note>(entity: Note.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Note.added, ascending: false)], predicate: NSPredicate(format: "text CONTAINS[c] %@ or title CONTAINS[c] %@", search, search), animation: .easeIn)
+    }
     
     @Environment(\.managedObjectContext) var context
     
@@ -54,10 +57,8 @@ struct TableView: View {
     }
 }
 
-struct TableView_Previews: PreviewProvider {
+struct FoundView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            TableView()
-        }
+        FoundView(search: "")
     }
 }
